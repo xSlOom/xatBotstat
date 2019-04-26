@@ -11,7 +11,8 @@ A PHP library for xat botstat API. The goal of this repository is to give the ab
 - PHP 7.2
 - Composer
 ## Getting Started
-To get started, clone this repository and run ``composer install`` or you can simply run:
+To get started, clone this repository and run ``composer install`` <br />
+or you can simply run:
 
 ```composer create-project xsloom/xatbotstat```.
 ## How to use?
