@@ -1,4 +1,11 @@
 # xatBotstat
+
+<p align="center">
+  
+[![Build Status](https://travis-ci.org/xSlOom/xatBotstat.svg?branch=master)](https://travis-ci.org/xSlOom/xatBotstat)
+
+</p>
+
 A PHP library for xat botstat API. The goal of this repository is to give the ability for developers to use botstat api properly and easier.
 ## Requirements
 - PHP 7.2
