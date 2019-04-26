@@ -60,7 +60,7 @@ class Botstat
             throw new \Exception('roomID must not be empty and must be integer.');
         }
 
-        if (empty($roomID) || !is_numeric($userID)) {
+        if (empty($userID) || !is_numeric($userID)) {
             throw new \Exception('userID must not be empty and must be integer.');
         }
 
