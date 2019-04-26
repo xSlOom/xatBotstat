@@ -1,5 +1,5 @@
 # xatBotstat
-A PHP library for Illuxat.com. The goal of this repository is to give the ability for developers to use botstat api properly and easier.
+A PHP library for xat botstat API. The goal of this repository is to give the ability for developers to use botstat api properly and easier.
 ## Requirements
 - PHP 7.2
 - Composer
