@@ -51,6 +51,10 @@ This allows you to set a new homepage.
 
 This allows you to set a new status. Note: You cannot set a name and a status in same time.
 
+> sendToXat()
+
+This will send the current data set to the botstat API.
+
 ## Errors
 
 As every apis in the world, they often return errors when something went wrong. The error code is often at the beginnig of the error message.
