@@ -1,0 +1,22 @@
+language: php
+
+php:
+  - 7.1
+
+matrix:
+  fast_finish: true
+
+  include:
+    - php: 7.1
+      env: PHPCS=1 DEFAULT=0
+
+install:
+  - composer self-update
+  - composer install --prefer-dist --no-interaction
+
+before_script:
+  - phpenv rehash
+
+script:
+  - sh -c "if [ '$DEFAULT' = '1' ]; then vendor/bin/phpunit; fi"
+  - sh -c "if [ '$PHPCS' = '1' ]; then vendor/bin/phpcs -p --extensions=php --standard=PSR2 ./src; fi"

@@ -1,0 +1,25 @@
+{
+    "name": "xsloom/xatbotstat",
+    "description": "A PHP library for xat BOTSTAT API.",
+    "keywords": ["xat", "xatech", "botstat", "php", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SLOom Clément",
+            "email": "admin@illuxat.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=7.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0",
+		"phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "xatBotstat\\": "src/"
+        }
+    }
+}
