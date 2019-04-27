@@ -122,7 +122,7 @@ class Botstat
      * @param array $data
      * @return array|null
      */
-    private static function getContent(string $url, array $data = []): ?array
+    private static function getContent(string $url): ?array
     {
         if (empty($url) || strlen($url) == 0) {
             throw new \Exception('You must specify a url');
