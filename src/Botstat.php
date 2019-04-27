@@ -119,7 +119,6 @@ class Botstat
     /**
      * Get content from a URL
      * @param string $url
-     * @param array $data
      * @return array|null
      */
     private static function getContent(string $url): ?array
