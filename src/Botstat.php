@@ -156,7 +156,7 @@ class Botstat
                 $err = 'Too many request. 3 packets each 20 seconds.';
                 break;
             case 10:
-                $err = 'Nothing to do. You didn\'t provide a correct paramater.';
+                $err = 'Nothing to do. You didn\'t provide a correct parameter.';
                 break;
             default:
                 $err = 'Unknown error.';
