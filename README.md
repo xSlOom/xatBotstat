@@ -69,6 +69,7 @@ As every apis in the world, they often return errors when something went wrong. 
 
 Here is the errors list:
 
+- ERROR 1: The selected room was not found.
 - ERROR 5: The user was not found on the chatroom
 - ERROR 6: The user needs status power enabled/set
 - ERROR 7: The user needs botstat power

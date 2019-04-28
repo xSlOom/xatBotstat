@@ -113,7 +113,38 @@ class Botstat
             throw new \Exception('Invalid JSON.');
         }
 
-        return $content;
+        $arrContent = [];
+
+        if ($content['error'] === true) {
+            $arrContent['error'] = $content['error'];
+            if (isset($content['message'])) {
+                preg_match("|\d+|", $content['message'], $matches);
+                if (!isset($matches[0])) {
+                    $arrContent['message'] = $content['message'];
+                } else {
+                    $arrContent['errorCode'] = $matches[0];
+                    $arrContent['message'] = self::getXatError($matches[0]);
+                }
+            }
+
+        }
+
+        return empty($arrContent) ? $content : $arrContent;
+    }
+
+    private static function getXatError(int $error): string
+    {
+        $err = null;
+        switch ($error) {
+            case 1: $err = 'The selected room was not found.'; break;
+            case 5: $err = 'The user was not found on the chatroom.'; break;
+            case 6: $err = 'The user needs status power enabled/set.'; break;
+            case 7: $err = 'The user needs BOTSTAT power.'; break;
+            case 9: $err = 'Too many request. 3 packets each 20 seconds.'; break;
+            case 10: $err = 'Nothing to do. You didn\'t provide a correct paramater.'; break;
+            default: $err = 'Unknown error.'; break;
+        }
+        return $err;
     }
 
     /**
